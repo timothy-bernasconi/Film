@@ -1,0 +1,75 @@
+body{
+
+    background-color: #B30024;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    height: 350px;
+    padding: 2rem 2rem;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    visibility: visible;
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    visibility: hidden;
+}
+
+button {
+    height: auto;
+    min-height: 50px;
+    width: 100px;
+    background-color:rgba(255, 255, 255, 0.052);
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    border-radius: 5px;
+    color: white;
+}
+
+.c-1 {
+    background-color: rgba(239, 25, 25, 0.537);
+}
+
+.c-2 {
+    background-color: rgba(238, 86, 246, 0.537);
+}
+
+.c-3 {
+    background-color: rgba(242, 255, 0, 0.537);
+}
+
+.c-4 {
+    background-color:rgba(0, 0, 0, 0.626) ;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
