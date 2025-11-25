@@ -1,65 +1,73 @@
-
 const filmsAction = [
-    { genre: "Espionnage", titre: "Mission Impossible – Fallout" },
-    { genre: "Espionnage", titre: "James Bond : Skyfall" },
-    { genre: "Espionnage", titre: "Kingsman : Services secrets" },
-    { genre: "Espionnage", titre: "La Taupe" },
-    { genre: "Espionnage", titre: "Atomic Blonde" },
-    { genre: "Espionnage", titre: "Agents très spéciaux : Code UNCLE" },
-    { genre: "Espionnage", titre: "Le Pont des espions" },
-    { genre: "Espionnage", titre: "Spy Game" },
-    { genre: "Espionnage", titre: "Body of Lies" },
-    { genre: "Espionnage", titre: "Salt" },
-    { genre: "Espionnage", titre: "Mission Impossible – Rogue Nation" },
-    { genre: "Espionnage", titre: "Jason Bourne - La Mémoire dans la peau" },
-    { genre: "Espionnage", titre: "Jason Bourne - La Mort dans la peau" },
-    { genre: "Espionnage", titre: "Jason Bourne - La Vengeance dans la peau" },
-    { genre: "Espionnage", titre: "James Bond : Casino Royale" },
-    { genre: "Espionnage", titre: "James Bond : Spectre" },
-    { genre: "Espionnage", titre: "L'espion qui venait du froid" },
-    { genre: "Espionnage", titre: "La Mort aux trousses" },
+  { genre: "Espionnage", titre: "Mission Impossible – Fallout" },
+  { genre: "Espionnage", titre: "James Bond : Skyfall" },
+  { genre: "Espionnage", titre: "Kingsman : Services secrets" },
+  { genre: "Espionnage", titre: "La Taupe" },
+  { genre: "Espionnage", titre: "Atomic Blonde" },
+  { genre: "Espionnage", titre: "Agents très spéciaux : Code UNCLE" },
+  { genre: "Espionnage", titre: "Le Pont des espions" },
+  { genre: "Espionnage", titre: "Spy Game" },
+  { genre: "Espionnage", titre: "Body of Lies" },
+  { genre: "Espionnage", titre: "Salt" },
+  { genre: "Espionnage", titre: "Mission Impossible – Rogue Nation" },
+  { genre: "Espionnage", titre: "Jason Bourne - La Mémoire dans la peau" },
+  { genre: "Espionnage", titre: "Jason Bourne - La Mort dans la peau" },
+  { genre: "Espionnage", titre: "Jason Bourne - La Vengeance dans la peau" },
+  { genre: "Espionnage", titre: "James Bond : Casino Royale" },
+  { genre: "Espionnage", titre: "James Bond : Spectre" },
+  { genre: "Espionnage", titre: "L'espion qui venait du froid" },
+  { genre: "Espionnage", titre: "La Mort aux trousses" },
 
-    { genre: "Thriller", titre: "Inception" },
-    { genre: "Thriller", titre: "Seven : Les Sept Crimes capitaux" },
-    { genre: "Thriller", titre: "Gone Girl" },
-    { genre: "Thriller", titre: "Shutter Island" },
-    { genre: "Thriller", titre: "Fight Club" },
-    { genre: "Thriller", titre: "Memento" },
-    { genre: "Thriller", titre: "The Prestige" },
-    { genre: "Thriller", titre: "Prisoners" },
-    { genre: "Thriller", titre: "Zodiac" },
-    { genre: "Thriller", titre: "No Country for Old Men" },
-    { genre: "Thriller", titre: "Millénium : Les Hommes qui n’aimaient pas les femmes" },
-    { genre: "Thriller", titre: "Black Swan" },
-    { genre: "Thriller", titre: "Les Infiltrés" },
-    { genre: "Thriller", titre: "Oldboy" },
-    { genre: "Thriller", titre: "Sicario" },
-    { genre: "Thriller", titre: "Nightcrawler" },
-    { genre: "Thriller", titre: "Heat" },
-    { genre: "Thriller", titre: "Collateral" },
-    { genre: "Thriller", titre: "Mystic River" },
-    { genre: "Thriller", titre: "Donnie Darko" },
+  { genre: "Thriller", titre: "Inception" },
+  { genre: "Thriller", titre: "Seven : Les Sept Crimes capitaux" },
+  { genre: "Thriller", titre: "Gone Girl" },
+  { genre: "Thriller", titre: "Shutter Island" },
+  { genre: "Thriller", titre: "Fight Club" },
+  { genre: "Thriller", titre: "Memento" },
+  { genre: "Thriller", titre: "The Prestige" },
+  { genre: "Thriller", titre: "Prisoners" },
+  { genre: "Thriller", titre: "Zodiac" },
+  { genre: "Thriller", titre: "No Country for Old Men" },
+  {
+    genre: "Thriller",
+    titre: "Millénium : Les Hommes qui n’aimaient pas les femmes",
+  },
+  { genre: "Thriller", titre: "Black Swan" },
+  { genre: "Thriller", titre: "Les Infiltrés" },
+  { genre: "Thriller", titre: "Oldboy" },
+  { genre: "Thriller", titre: "Sicario" },
+  { genre: "Thriller", titre: "Nightcrawler" },
+  { genre: "Thriller", titre: "Heat" },
+  { genre: "Thriller", titre: "Collateral" },
+  { genre: "Thriller", titre: "Mystic River" },
+  { genre: "Thriller", titre: "Donnie Darko" },
 
-    { genre: "Aventure", titre: "Indiana Jones et la Dernière Croisade" },
-    { genre: "Aventure", titre: "Jurassic Park" },
-    { genre: "Aventure", titre: "Pirates des Caraïbes : La Malédiction du Black Pearl" },
-    { genre: "Aventure", titre: "Le Seigneur des anneaux : La Communauté de l’Anneau" },
-    { genre: "Aventure", titre: "Le Seigneur des anneaux : Les Deux Tours" },
-    { genre: "Aventure", titre: "Le Seigneur des anneaux : Le Retour du Roi" },
-    { genre: "Aventure", titre: "Harry Potter à l’école des sorciers" },
-    { genre: "Aventure", titre: "Harry Potter et la Chambre des secrets" },
-    { genre: "Aventure", titre: "Harry Potter et le Prisonnier d’Azkaban" },
-    { genre: "Aventure", titre: "Harry Potter et la Coupe de feu" },
-    { genre: "Aventure", titre: "Avatar" },
-    { genre: "Aventure", titre: "Le Livre de la jungle" },
-    { genre: "Aventure", titre: "King Kong" },
-    { genre: "Aventure", titre: "The Revenant" },
-    { genre: "Aventure", titre: "L’Odyssée de Pi" },
-    { genre: "Aventure", titre: "Le Hobbit : Un voyage inattendu" },
-    { genre: "Aventure", titre: "Le Hobbit : La Désolation de Smaug" },
-    { genre: "Aventure", titre: "Le Hobbit : La Bataille des cinq armées" },
-    { genre: "Aventure", titre: "Mad Max : Fury Road" },
-    { genre: "Aventure", titre: "Le Masque de Zorro" }
+  { genre: "Aventure", titre: "Indiana Jones et la Dernière Croisade" },
+  { genre: "Aventure", titre: "Jurassic Park" },
+  {
+    genre: "Aventure",
+    titre: "Pirates des Caraïbes : La Malédiction du Black Pearl",
+  },
+  {
+    genre: "Aventure",
+    titre: "Le Seigneur des anneaux : La Communauté de l’Anneau",
+  },
+  { genre: "Aventure", titre: "Le Seigneur des anneaux : Les Deux Tours" },
+  { genre: "Aventure", titre: "Le Seigneur des anneaux : Le Retour du Roi" },
+  { genre: "Aventure", titre: "Harry Potter à l’école des sorciers" },
+  { genre: "Aventure", titre: "Harry Potter et la Chambre des secrets" },
+  { genre: "Aventure", titre: "Harry Potter et le Prisonnier d’Azkaban" },
+  { genre: "Aventure", titre: "Harry Potter et la Coupe de feu" },
+  { genre: "Aventure", titre: "Avatar" },
+  { genre: "Aventure", titre: "Le Livre de la jungle" },
+  { genre: "Aventure", titre: "King Kong" },
+  { genre: "Aventure", titre: "The Revenant" },
+  { genre: "Aventure", titre: "L’Odyssée de Pi" },
+  { genre: "Aventure", titre: "Le Hobbit : Un voyage inattendu" },
+  { genre: "Aventure", titre: "Le Hobbit : La Désolation de Smaug" },
+  { genre: "Aventure", titre: "Le Hobbit : La Bataille des cinq armées" },
+  { genre: "Aventure", titre: "Mad Max : Fury Road" },
+  { genre: "Aventure", titre: "Le Masque de Zorro" },
 ];
 
 const filmsRomance = [
@@ -106,26 +114,26 @@ const filmsRomance = [
   { genre: "Noël", titre: "Les Vacances de Noël" },
   { genre: "Noël", titre: "Scrooge" },
   { genre: "Noël", titre: "Holiday in the Wild" },
-  { genre: "Drama Coréen", titre: "Parasite" },
-  { genre: "Drama Coréen", titre: "Train to Busan" },
-  { genre: "Drama Coréen", titre: "Oldboy" },
-  { genre: "Drama Coréen", titre: "The Handmaiden" },
-  { genre: "Drama Coréen", titre: "My Sassy Girl" },
-  { genre: "Drama Coréen", titre: "A Moment to Remember" },
-  { genre: "Drama Coréen", titre: "The Classic" },
-  { genre: "Drama Coréen", titre: "Secretly, Greatly" },
-  { genre: "Drama Coréen", titre: "The Man From Nowhere" },
-  { genre: "Drama Coréen", titre: "Silenced" },
-  { genre: "Drama Coréen", titre: "Architecture 101" },
-  { genre: "Drama Coréen", titre: "Be With You" },
-  { genre: "Drama Coréen", titre: "Time Renegade" },
-  { genre: "Drama Coréen", titre: "20th Century Girl" },
-  { genre: "Drama Coréen", titre: "Tune in for Love" },
-  { genre: "Drama Coréen", titre: "A Werewolf Boy" },
-  { genre: "Drama Coréen", titre: "The Battleship Island" },
-  { genre: "Drama Coréen", titre: "Fabricated City" },
-  { genre: "Drama Coréen", titre: "Confession" },
-  { genre: "Drama Coréen", titre: "Secret Zoo" },
+  { genre: "Drama Coréen", titre: "Crash Landing on You" },
+  { genre: "Drama Coréen", titre: "It’s Okay to Not Be Okay" },
+  { genre: "Drama Coréen", titre: "Descendants of the Sun" },
+  { genre: "Drama Coréen", titre: "Goblin" },
+  { genre: "Drama Coréen", titre: "Start-Up" },
+  { genre: "Drama Coréen", titre: "Nevertheless" },
+  { genre: "Drama Coréen", titre: "True Beauty" },
+  { genre: "Drama Coréen", titre: "Romance is a Bonus Book" },
+  { genre: "Drama Coréen", titre: "Her Private Life" },
+  { genre: "Drama Coréen", titre: "Love Alarm" },
+  { genre: "Drama Coréen", titre: "My Love from the Star" },
+  { genre: "Drama Coréen", titre: "The World of the Married" },
+  { genre: "Drama Coréen", titre: "Flower of Evil" },
+  { genre: "Drama Coréen", titre: "My ID is Gangnam Beauty" },
+  { genre: "Drama Coréen", titre: "Moon Lovers: Scarlet Heart Ryeo" },
+  { genre: "Drama Coréen", titre: "Hospital Playlist" },
+  { genre: "Drama Coréen", titre: "Reply 1988" },
+  { genre: "Drama Coréen", titre: "Vincenzo" },
+  { genre: "Drama Coréen", titre: "Hometown Cha-Cha-Cha" },
+  { genre: "Drama Coréen", titre: "Business Proposal" },
 ];
 const filmsComedie = [
   { genre: "Comédie française", titre: "Intouchables" },
@@ -259,89 +267,71 @@ const filmsHorreur = [
 ];
 
 const retryBtn = document.querySelector(".retry");
+const resetBtn = document.querySelector(".reset");
+const subBtns = document.querySelectorAll(".subgenre-btn");
+const container = document.querySelector(".container");
+const subContainer = document.querySelector(".subgenre-container");
+const title = document.getElementById("title");
 
+const sousGenres = {
+  action: ["Aventure", "Espionnage", "Thriller"],
+  romance: ["Eau de rose", "Noël", "Drama Coréen"],
+  comedie: ["Comédie française", "Comédie américaine", "Sitcom"],
+  horreur: ["Gore", "Slasher", "Parodie"],
+};
 
-function choisirFilm(sousGenre, tableauFilms, containerVisible) {
+const tableauxFilms = {
+  action: filmsAction,
+  romance: filmsRomance,
+  comedie: filmsComedie,
+  horreur: filmsHorreur,
+};
 
-    const filmsFiltres = tableauFilms.filter(film => film.genre === sousGenre);
-
-    function tirerFilm() {
-        const randomIndex = Math.floor(Math.random() * filmsFiltres.length);
-        const filmChoisi = filmsFiltres[randomIndex];
-        document.getElementById("title").innerHTML =  filmChoisi.titre;
-    }
-
-
-    document.querySelector(containerVisible).classList.remove("visible");
-
- 
-    tirerFilm();
-
-
-    retryBtn.classList.remove("hidden");
-
-  
-    retryBtn.onclick = tirerFilm;
+function choisirFilm(sousGenre, tableauFilms) {
+  const filmsFiltres = tableauFilms.filter((f) => f.genre === sousGenre);
+  const randomIndex = Math.floor(Math.random() * filmsFiltres.length);
+  title.innerHTML = filmsFiltres[randomIndex].titre;
+  retryBtn.style.display = "inline-block";
+  subContainer.style.display = "none";
 }
 
-
+function afficherSousGenres(genre) {
+  container.style.display = "none";
+  subBtns.forEach((btn, i) => {
+    btn.textContent = sousGenres[genre][i];
+    btn.onclick = () => choisirFilm(sousGenres[genre][i], tableauxFilms[genre]);
+  });
+  subContainer.style.display = "flex";
+  retryBtn.style.display = "none";
+}
 
 document.querySelector(".c-1").addEventListener("click", () => {
-    document.getElementById("title").innerHTML = "Un film d'action, très bon choix ! Vous êtes plutôt :";
-    document.querySelector(".container").classList.add("hidden");
-    document.querySelector(".container2").classList.add("visible");
-
-    retryBtn.classList.add("hidden"); 
+  title.innerHTML = "Un film d'action, très bon choix ! Vous êtes plutôt :";
+  afficherSousGenres("action");
 });
-
-document.querySelector(".p-1").addEventListener("click", () => choisirFilm("Aventure", filmsAction, ".container2"));
-document.querySelector(".p-2").addEventListener("click", () => choisirFilm("Espionnage", filmsAction, ".container2"));
-document.querySelector(".p-3").addEventListener("click", () => choisirFilm("Thriller", filmsAction, ".container2"));
-
-
 
 document.querySelector(".c-2").addEventListener("click", () => {
-    document.getElementById("title").innerHTML = "Un film romantique, parfait ! Vous êtes plutôt :";
-    document.querySelector(".container").classList.add("hidden");
-    document.querySelector(".container3").classList.add("visible");
-
-    retryBtn.classList.add("hidden");
+  title.innerHTML = "Un film romantique, parfait ! Vous êtes plutôt :";
+  afficherSousGenres("romance");
 });
-
-document.querySelector(".p-4").addEventListener("click", () => choisirFilm("Eau de rose", filmsRomance, ".container3"));
-document.querySelector(".p-5").addEventListener("click", () => choisirFilm("Noël", filmsRomance, ".container3"));
-document.querySelector(".p-6").addEventListener("click", () => choisirFilm("Drama Coréen", filmsRomance, ".container3"));
-
-
 
 document.querySelector(".c-3").addEventListener("click", () => {
-    document.getElementById("title").innerHTML = "Une comédie, génial ! Vous êtes plutôt :";
-    document.querySelector(".container").classList.add("hidden");
-    document.querySelector(".container4").classList.add("visible");
-
-    retryBtn.classList.add("hidden");
+  title.innerHTML = "Une comédie, génial ! Vous êtes plutôt :";
+  afficherSousGenres("comedie");
 });
-
-document.querySelector(".p-7").addEventListener("click", () => choisirFilm("Comédie française", filmsComedie, ".container4"));
-document.querySelector(".p-8").addEventListener("click", () => choisirFilm("Comédie américaine", filmsComedie, ".container4"));
-document.querySelector(".p-9").addEventListener("click", () => choisirFilm("Sitcom", filmsComedie, ".container4"));
-
-
 
 document.querySelector(".c-4").addEventListener("click", () => {
-    document.getElementById("title").innerHTML = "Un film d'horreur, hehe ! Vous êtes plutôt :";
-    document.querySelector(".container").classList.add("hidden");
-    document.querySelector(".container5").classList.add("visible");
-
-    retryBtn.classList.add("hidden");
+  title.innerHTML = "Un film d'horreur, hehe ! Vous êtes plutôt :";
+  afficherSousGenres("horreur");
 });
 
-document.querySelector(".p-10").addEventListener("click", () => choisirFilm("Gore", filmsHorreur, ".container5"));
-document.querySelector(".p-11").addEventListener("click", () => choisirFilm("Slasher", filmsHorreur, ".container5"));
-document.querySelector(".p-12").addEventListener("click", () => choisirFilm("Parodie", filmsHorreur, ".container5"));
+retryBtn.addEventListener("click", () => {
+  const firstGenre = Object.keys(sousGenres).find((g) =>
+    sousGenres[g].includes(subBtns[0].textContent)
+  );
+  subBtns[0].click();
+});
 
-
-
-document.querySelector(".reset").addEventListener("click", () => {
-    window.location.href = "./index.html";
+resetBtn.addEventListener("click", () => {
+  window.location.reload();
 });
