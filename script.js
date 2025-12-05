@@ -266,12 +266,20 @@ const filmsHorreur = [
   { genre: "Parodie", titre: "Dead Snow" },
 ];
 
+// cible le bouton " relancer " //
 const retryBtn = document.querySelector(".retry");
+// cible le bouton qui renvoit à la page d'acceuil //
 const resetBtn = document.querySelector(".reset");
+// cible les boutons sous-genre //
 const subBtns = document.querySelectorAll(".subgenre-btn");
+// cible le premier container des genres // 
 const container = document.querySelector(".container");
+// cible le deuxième container des sous-genres //
 const subContainer = document.querySelector(".subgenre-container");
+// cible le H1 //
 const title = document.getElementById("title");
+
+// Tableau des sous-genre //
 
 const sousGenres = {
   action: ["Aventure", "Espionnage", "Thriller"],
@@ -280,6 +288,7 @@ const sousGenres = {
   horreur: ["Gore", "Slasher", "Parodie"],
 };
 
+// Crée un objet qui regroupe les  tableaux de films sous des clés //
 const tableauxFilms = {
   action: filmsAction,
   romance: filmsRomance,
@@ -287,6 +296,7 @@ const tableauxFilms = {
   horreur: filmsHorreur,
 };
 
+// la fonction va sélectionner au hasard un film correspondant au sous-genre choisi, l’affiche dans le titre, montre le bouton relancer et masque le conteneur des sous-genres. // 
 function choisirFilm(sousGenre, tableauFilms) {
   const filmsFiltres = tableauFilms.filter((f) => f.genre === sousGenre);
   const randomIndex = Math.floor(Math.random() * filmsFiltres.length);
@@ -295,6 +305,7 @@ function choisirFilm(sousGenre, tableauFilms) {
   subContainer.style.display = "none";
 }
 
+// la fomnction va afficher les sous-genres d'après le genre choisi, cache le conteneur principal et le bouton relancer.
 function afficherSousGenres(genre) {
   container.style.display = "none";
   subBtns.forEach((btn, i) => {
@@ -305,26 +316,32 @@ function afficherSousGenres(genre) {
   retryBtn.style.display = "none";
 }
 
+// ajout d'un envent pour le genre Action //
+
 document.querySelector(".c-1").addEventListener("click", () => {
   title.innerHTML = "Un film d'action, très bon choix ! Vous êtes plutôt :";
   afficherSousGenres("action");
 });
 
+// ajout d'un envent pour le genre romance //
 document.querySelector(".c-2").addEventListener("click", () => {
   title.innerHTML = "Un film romantique, parfait ! Vous êtes plutôt :";
   afficherSousGenres("romance");
 });
 
+// ajout d'un envent pour le genre comédie //
 document.querySelector(".c-3").addEventListener("click", () => {
   title.innerHTML = "Une comédie, génial ! Vous êtes plutôt :";
   afficherSousGenres("comedie");
 });
 
+// ajout d'un envent pour le genre horreur //
 document.querySelector(".c-4").addEventListener("click", () => {
   title.innerHTML = "Un film d'horreur, hehe ! Vous êtes plutôt :";
   afficherSousGenres("horreur");
 });
 
+// ajout d'un envent pour le boutton relancer //
 retryBtn.addEventListener("click", () => {
   const firstGenre = Object.keys(sousGenres).find((g) =>
     sousGenres[g].includes(subBtns[0].textContent)
@@ -332,6 +349,7 @@ retryBtn.addEventListener("click", () => {
   subBtns[0].click();
 });
 
+// ajout d'un envent pour le bouton accueil //
 resetBtn.addEventListener("click", () => {
   window.location.reload();
 });

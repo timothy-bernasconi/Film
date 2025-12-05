@@ -4,30 +4,27 @@ body {
     color: white;
     text-align: center;
 }
-
 h1 {
     font-size: 4rem;
     text-shadow: 1px 3px 10px rgb(0, 38, 255);
     padding: 2rem 0;
 }
-
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+   
 }
-
-.container, .subgenre-container {
+.container,
+.subgenre-container {
     display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
-
 .subgenre-container {
     display: none;
 }
-
 button {
     min-height: 50px;
     width: 100px;
@@ -37,51 +34,51 @@ button {
     color: white;
     cursor: pointer;
 }
-
-
-.c-1 { background-color: #FF0033; }
-.c-2 { background-color: #FF4FD8; }
-.c-3 { background-color: #FFD800; color: black; }
-.c-4 { background-color: #00FF88; color: black; }
-
-
-
+.c-1 {
+    background-color: #FF0033;
+}
+.c-2 {
+    background-color: #FF4FD8;
+}
+.c-3 {
+    background-color: #FFD800;
+    color: black;
+}
+.c-4 {
+    background-color: #00FF88;
+    color: black;
+}
 .retry {
     margin-top: 1rem;
     display: none;
     padding: 10px 20px;
-    background-color: #1E90FF;;
+    background-color: #1E90FF;
+    ;
 }
-
 .reset {
     text-align: center;
     margin-bottom: 1rem;
     cursor: pointer;
 }
-
 .reset i {
     font-size: 2rem;
     color: white;
     transition: 0.2s;
 }
-
 .reset i:hover {
-    color: #00f; /* effet hover simple */
+    color: #00f; 
 }
-
-
 @media (max-width: 700px) {
 
     .container,
     .subgenre-container {
         flex-direction: column;
         align-items: center;
-        gap: 1rem; 
+        gap: 1rem;
     }
-
     .subgenre-btn,
     .choice {
-        width: 80%; 
-        max-width: 250px; 
-}
+        width: 80%;
+        max-width: 250px;
+    }
 }
